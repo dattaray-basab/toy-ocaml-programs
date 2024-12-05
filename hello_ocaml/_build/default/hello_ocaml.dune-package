@@ -1,0 +1,4 @@
+(lang dune 3.17)
+(name hello_ocaml)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (hello_ocaml)))

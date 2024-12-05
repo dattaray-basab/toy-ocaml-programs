@@ -1,0 +1,4 @@
+(executable
+ (public_name xyz)
+ (name xyz)
+ (libraries lib1 lib2))

@@ -1,0 +1,1 @@
+let exclaim message = message ^ "!!!"

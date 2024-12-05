@@ -1,0 +1,17 @@
+# dune exec xyz
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/bd/.cache/dune/db
+# Workspace root:
+# /Users/bd/Documents/__DEV_5/DreamCoderEcoSys/ocaml/toy-ocaml-programs/multi_lib_example
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /usr/local/bin/ocamlc.opt -config > /var/folders/3z/2w4pq0tx7cvb4zbypq9pzmdm0000gn/T/dune_8823aa_output
