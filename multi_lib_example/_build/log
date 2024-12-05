@@ -1,4 +1,4 @@
-# dune exec xyz
+# dune runtest
 # OCAMLPARAM: unset
 # Shared cache: enabled-except-user-rules
 # Shared cache location: /Users/bd/.cache/dune/db
@@ -14,16 +14,8 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /usr/local/bin/ocamlc.opt -config > /var/folders/3z/2w4pq0tx7cvb4zbypq9pzmdm0000gn/T/dune_8260d6_output
-$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib1/module2.ml) > _build/default/lib1/.lib1.objs/lib1__Module2.impl.d
-$ (cd _build/default && /usr/local/bin/ocamldep.opt -modules -impl lib1/module1.ml) > _build/default/lib1/.lib1.objs/lib1__Module1.impl.d
-$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib2/.lib2.objs/byte -no-alias-deps -opaque -o lib2/.lib2.objs/byte/lib2.cmo -c -impl lib2/lib2.ml)
-$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib1/.lib1.objs/byte -no-alias-deps -opaque -open Lib1 -o lib1/.lib1.objs/byte/lib1__Module2.cmo -c -impl lib1/module2.ml)
-$ (cd _build/default && /usr/local/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib1/.lib1.objs/byte -no-alias-deps -opaque -open Lib1 -o lib1/.lib1.objs/byte/lib1__Module1.cmo -c -impl lib1/module1.ml)
-$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib2/.lib2.objs/byte -I lib2/.lib2.objs/native -intf-suffix .ml -no-alias-deps -opaque -o lib2/.lib2.objs/native/lib2.cmx -c -impl lib2/lib2.ml)
-$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib1/.lib1.objs/byte -I lib1/.lib1.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Lib1 -o lib1/.lib1.objs/native/lib1__Module2.cmx -c -impl lib1/module2.ml)
-$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib1/.lib1.objs/byte -I lib1/.lib1.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Lib1 -o lib1/.lib1.objs/native/lib1__Module1.cmx -c -impl lib1/module1.ml)
-$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.xyz.eobjs/byte -I bin/.xyz.eobjs/native -I lib1/.lib1.objs/byte -I lib1/.lib1.objs/native -I lib2/.lib2.objs/byte -I lib2/.lib2.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.xyz.eobjs/native/dune__exe__Xyz.cmx -c -impl bin/xyz.ml)
-$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib2/lib2.cmxa lib2/.lib2.objs/native/lib2.cmx)
-$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib1/lib1.cmxa lib1/.lib1.objs/native/lib1.cmx lib1/.lib1.objs/native/lib1__Module2.cmx lib1/.lib1.objs/native/lib1__Module1.cmx)
-$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/xyz.exe lib1/lib1.cmxa lib2/lib2.cmxa bin/.xyz.eobjs/native/dune__exe__Xyz.cmx)
+$ /usr/local/bin/ocamlc.opt -config > /var/folders/3z/2w4pq0tx7cvb4zbypq9pzmdm0000gn/T/dune_999ef5_output
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_xyz.eobjs/byte -I test/.test_xyz.eobjs/native -I lib1/.lib1.objs/byte -I lib1/.lib1.objs/native -I lib2/.lib2.objs/byte -I lib2/.lib2.objs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_xyz.eobjs/native/dune__exe__Test_xyz.cmx -c -impl test/test_xyz.ml)
+$ (cd _build/default && /usr/local/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_xyz.exe lib1/lib1.cmxa lib2/lib2.cmxa test/.test_xyz.eobjs/native/dune__exe__Test_xyz.cmx)
+$ (cd _build/default/test && ./test_xyz.exe)
+> All tests passed!

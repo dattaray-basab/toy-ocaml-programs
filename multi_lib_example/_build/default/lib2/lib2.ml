@@ -1,1 +1,1 @@
-let exclaim message = message ^ " lib2 "
+let exclaim message = message ^ " lib2"
